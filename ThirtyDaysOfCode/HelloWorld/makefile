@@ -3,7 +3,7 @@ CC := $(CXX)
 CXXFLAGS += -MMD -MP
 
 CXXFLAGS += -std=c++0x
-CXXFLAGS += -fdiagnostics-show-option -fmessage-length=0 -W -Wall -Werror
+CXXFLAGS += -fdiagnostics-show-option -fmessage-length=0 -W -Wall -Werror -Weffc++
 CXXFLAGS += -Wformat=2 -Wformat-y2k
 CXXFLAGS += -Wignored-qualifiers
 CXXFLAGS += -Wmissing-include-dirs
