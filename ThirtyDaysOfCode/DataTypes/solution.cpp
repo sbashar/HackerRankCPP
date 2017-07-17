@@ -1,8 +1,19 @@
 #include "solution.h"
 
-std::string Solution::printResult(const int& inputInteger, const double& inputDouble, const std::string& inputString, const int& fixedInteger, const double& fixedDouble, const std::string& fixedString) {
-    std::string returnString = inputInteger + fixedInteger + "\n";
-    returnString += inputDouble + fixedDouble + "\n";
-    returnString += inputString + fixedString + "\n";
-    return returnString;
+Solution::Solution(const int& i, const double& d, const std::string& s) 
+    : fixedInteger(i), fixedDouble(d), fixedString(s) {
+}
+
+int Solution::calculateInteger(const int& i) const {
+    return fixedInteger + i;
+}
+
+double calculateDouble(const double& d) const {
+    return fixedDouble + d;
+}
+
+std::string& calculateString(const std::string& s) const {
+    return fixedString + s;
+}
+void Solution::printResult(const int& inputInteger, const double& inputDouble, const std::string& inputString) {
 }

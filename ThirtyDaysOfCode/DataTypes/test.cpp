@@ -14,8 +14,8 @@ class SolutionTest : public ::testing::Test {
 
 
 TEST_F(SolutionTest,testEmptyInput) {
-    Solution solution;
-    ASSERT_EQ("",solution.printResult(0,0.0,"",0,0.0,""));
+    Solution solution(4, 4.0, "HackerRank ");
+    ASSERT_EQ(4,solution.calculateInteger(0));
 }
 
 int main(int argc, char **argv) {

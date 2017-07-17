@@ -15,13 +15,13 @@ int main() {
     int inputInteger;
     double inputDouble;
 
-    Solution solution;
-
     cin >> inputInteger;
     cin >> inputDouble;
     getline(cin >> ws, inputString);
 
-    cout << solution.printResult(inputInteger, inputDouble, inputString, fixedInteger, fixedDouble, fixedString) << endl;
+    Solution solution(fixedInteger, fixedDouble, fixedString);
+
+    solution.printResult(inputInteger, inputDouble, inputString);
 
     return 0;
 }
