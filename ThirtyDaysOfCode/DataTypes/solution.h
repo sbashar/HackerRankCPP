@@ -12,7 +12,7 @@ class Solution{
         Solution(const int& i, const double& d, const std::string& s);
         int calculateInteger(const int& i) const;
         double calculateDouble(const double& d) const;
-        std::string& calculateString(const std::string& s) const;
+        std::string calculateString(const std::string& s) const;
         void printResult(const int& inputInteger, const double& inputDouble, const std::string& inputString);
 };
 
