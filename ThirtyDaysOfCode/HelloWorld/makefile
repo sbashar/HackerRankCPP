@@ -4,6 +4,8 @@ CXXFLAGS += -MMD -MP
 
 CXXFLAGS += -std=c++0x
 CXXFLAGS += -fdiagnostics-show-option -fmessage-length=0 -W -Wall -Werror -Weffc++
+CXXFLAGS += -Wextra
+CXXFLAGS += -pedantic
 CXXFLAGS += -Wformat=2 -Wformat-y2k
 CXXFLAGS += -Wignored-qualifiers
 CXXFLAGS += -Wmissing-include-dirs
@@ -11,6 +13,7 @@ CXXFLAGS += -Wunused-parameter
 CXXFLAGS += -Wfloat-equal
 CXXFLAGS += -Wundef
 CXXFLAGS += -Wshadow
+CXXFLAGS += -Wnon-virtual-dtor 
 CXXFLAGS += -Wpointer-arith
 CXXFLAGS += -Wcast-qual
 CXXFLAGS += -Wcast-align
