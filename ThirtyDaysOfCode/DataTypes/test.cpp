@@ -16,6 +16,7 @@ class SolutionTest : public ::testing::Test {
 TEST_F(SolutionTest,testEmptyInput) {
     Solution solution(4, 4.0, "HackerRank ");
     ASSERT_EQ(4,solution.calculateInteger(0));
+    ASSERT_DOUBLE_EQ(4.0,solution.calculateDouble(0));
 }
 
 int main(int argc, char **argv) {

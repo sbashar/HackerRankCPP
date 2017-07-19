@@ -3,7 +3,7 @@
 
 #include<string>
 
-class Solution{
+class Solution {
     private:
         const int fixedInteger;
         const double fixedDouble;
