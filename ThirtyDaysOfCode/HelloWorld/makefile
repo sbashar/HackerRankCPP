@@ -2,7 +2,7 @@ CC := $(CXX)
 
 CXXFLAGS += -MMD -MP
 
-CXXFLAGS += -std=c++0x
+CXXFLAGS += -std=c++11
 CXXFLAGS += -fdiagnostics-show-option -fmessage-length=0 -W -Wall -Werror -Weffc++
 CXXFLAGS += -Wextra
 CXXFLAGS += -pedantic
