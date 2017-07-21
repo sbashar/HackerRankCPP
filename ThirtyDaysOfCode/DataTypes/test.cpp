@@ -13,10 +13,34 @@ class SolutionTest : public ::testing::Test {
 };
 
 
-TEST_F(SolutionTest,testEmptyInput) {
+TEST_F(SolutionTest,testEmptyInt) {
     Solution solution(4, 4.0, "HackerRank ");
-    ASSERT_EQ(4,solution.calculateInteger(0));
-    ASSERT_DOUBLE_EQ(4.0,solution.calculateDouble(0));
+    ASSERT_EQ(4,solution.calculate(0));
+}
+
+TEST_F(SolutionTest,testEmptyDouble) {
+    Solution solution(4, 4.0, "HackerRank ");
+    ASSERT_DOUBLE_EQ(4.0,solution.calculate(0.0));
+}
+
+TEST_F(SolutionTest,testEmptyString) {
+    Solution solution(4, 4.0, "HackerRank ");
+    ASSERT_EQ("HackerRank ",solution.calculate(""));
+}
+
+TEST_F(SolutionTest,testValidInteger) {
+    Solution solution(4, 4.0, "HackerRank ");
+    ASSERT_EQ(16,solution.calculate(12));
+}
+
+TEST_F(SolutionTest,testValidDouble) {
+    Solution solution(4, 4.0, "HackerRank ");
+    ASSERT_DOUBLE_EQ(8.0,solution.calculate(4.0));
+}
+
+TEST_F(SolutionTest,testValidString) {
+    Solution solution(4, 4.0, "HackerRank ");
+    ASSERT_EQ("HackerRank is the best place to learn and practice coding!",solution.calculate("is the best place to learn and practice coding!"));
 }
 
 int main(int argc, char **argv) {

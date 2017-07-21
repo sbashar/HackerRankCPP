@@ -2,6 +2,7 @@
 #define __SOLUTION_H_INCLUDED__
 
 #include<string>
+#include<iostream>
 
 class Solution {
     private:
@@ -10,9 +11,9 @@ class Solution {
         const std::string fixedString;
     public:
         Solution(const int& i, const double& d, const std::string& s);
-        int calculateInteger(const int& i) const;
-        double calculateDouble(const double& d) const;
-        std::string calculateString(const std::string& s) const;
+        int calculate(const int& i) const;
+        double calculate(const double& d) const;
+        std::string calculate(const std::string& s) const;
         void printResult(const int& inputInteger, const double& inputDouble, const std::string& inputString);
 };
 
