@@ -43,6 +43,11 @@ TEST_F(SolutionTest,testValidString) {
     ASSERT_EQ("HackerRank is the best place to learn and practice coding!",solution.calculate("is the best place to learn and practice coding!"));
 }
 
+TEST_F(SolutionTest,testFormattedDouble) {
+    Solution solution(4, 4.0, "HackerRank ");
+    ASSERT_EQ("8.0",solution.formattedDouble(4.02));
+}
+
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

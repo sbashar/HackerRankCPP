@@ -3,6 +3,8 @@
 
 #include<string>
 #include<iostream>
+#include<sstream>
+#include<iomanip>
 
 class Solution {
     private:
@@ -14,6 +16,7 @@ class Solution {
         int calculate(const int& i) const;
         double calculate(const double& d) const;
         std::string calculate(const std::string& s) const;
+        std::string formattedDouble(const double& d) const;
         void printResult(const int& inputInteger, const double& inputDouble, const std::string& inputString);
 };
 

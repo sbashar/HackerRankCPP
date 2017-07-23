@@ -15,12 +15,14 @@ int main() {
     int inputInteger;
     double inputDouble;
 
+    // Read input
     cin >> inputInteger;
     cin >> inputDouble;
     getline(cin >> ws, inputString);
 
     Solution solution(fixedInteger, fixedDouble, fixedString);
 
+    // Print solution
     solution.printResult(inputInteger, inputDouble, inputString);
 
     return 0;
