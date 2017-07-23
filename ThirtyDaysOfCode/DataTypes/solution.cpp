@@ -22,8 +22,24 @@ std::string Solution::formattedDouble(const double& d) const {
     return stream.str();
 }
 
+std::string Solution::formattedInt(const int& i) const {
+    std::stringstream stream;
+    stream << Solution::calculate(i);
+    return stream.str();
+}
+
+std::string Solution::formattedResult(const int& inputInteger, const double& inputDouble, const std::string& inputString) const {
+    std::string returnString = ""; 
+    returnString += Solution::formattedInt(inputInteger);
+    returnString += "\n";
+    returnString += Solution::formattedDouble(inputDouble);
+    returnString += "\n";
+    returnString += Solution::calculate(inputString);
+    returnString += "\n";
+
+    return returnString;
+}
+
 void Solution::printResult(const int& inputInteger, const double& inputDouble, const std::string& inputString) {
-    std::cout << Solution::calculate(inputInteger) << std::endl;
-    std::cout << Solution::calculate(inputDouble) << std::endl;
-    std::cout << Solution::calculate(inputString) << std::endl;
+    std::cout << Solution::formattedResult(inputInteger, inputDouble, inputString);
 }

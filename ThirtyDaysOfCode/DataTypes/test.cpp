@@ -48,6 +48,16 @@ TEST_F(SolutionTest,testFormattedDouble) {
     ASSERT_EQ("8.0",solution.formattedDouble(4.02));
 }
 
+TEST_F(SolutionTest,testFormattedInt) {
+    Solution solution(4, 4.0, "HackerRank ");
+    ASSERT_EQ("16",solution.formattedInt(12));
+}
+
+TEST_F(SolutionTest,testFormattedResult) {
+    Solution solution(4, 4.0, "HackerRank ");
+    ASSERT_EQ("16\n8.0\nHackerRank is the best place to learn and practice coding!\n",solution.formattedResult(12,4.0,"is the best place to learn and practice coding!"));
+}
+
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

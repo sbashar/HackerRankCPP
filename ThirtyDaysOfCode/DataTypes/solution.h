@@ -17,6 +17,8 @@ class Solution {
         double calculate(const double& d) const;
         std::string calculate(const std::string& s) const;
         std::string formattedDouble(const double& d) const;
+        std::string formattedInt(const int& i) const;
+        std::string formattedResult(const int& inputInteger, const double& inputDouble, const std::string& inputString) const;
         void printResult(const int& inputInteger, const double& inputDouble, const std::string& inputString);
 };
 
