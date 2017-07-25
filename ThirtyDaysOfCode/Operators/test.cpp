@@ -14,12 +14,17 @@ class SolutionTest : public ::testing::Test {
 
 TEST_F(SolutionTest,testEmptyTip) {
     Solution solution;
-    ASSERT_DOUBLE_EQ(0.0,solution.tip(0.0,0));
+    ASSERT_DOUBLE_EQ(0.0,solution.amountFromPercent(0.0,0));
 }
 
 TEST_F(SolutionTest,testValidTip) {
     Solution solution;
-    ASSERT_DOUBLE_EQ(2.4,solution.tip(12,20));
+    ASSERT_DOUBLE_EQ(2.4,solution.amountFromPercent(12,20));
+}
+
+TEST_F(SolutionTest,testNegativeTip) {
+    Solution solution;
+    ASSERT_DOUBLE_EQ(-2.4,solution.amountFromPercent(12,-20));
 }
 
 int main(int argc, char **argv) {

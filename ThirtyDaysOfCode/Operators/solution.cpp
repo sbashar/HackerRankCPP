@@ -1,10 +1,10 @@
 #include "solution.h"
 
-double Solution::tip(const double& mealCost, const int& tipPercent) const {
-    if(std::abs(mealCost - 0.0) < 0.0001 || tipPercent == 0) {
+double Solution::amountFromPercent(const double& mealCost, const int& percent) const {
+    if(std::abs(mealCost - 0.0) < 0.0001 || percent == 0) {
         return 0;
     }
-    return (mealCost * tipPercent) / 100;
+    return (mealCost * percent) / 100;
 }
 
 void Solution::printResult(const double& mealCost, const int& tipPercent, const int& taxPercent) {

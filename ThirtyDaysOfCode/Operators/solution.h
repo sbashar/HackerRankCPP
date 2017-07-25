@@ -7,7 +7,7 @@
 
 class Solution {
     public:
-        double tip(const double& mealCost, const int& tipPercent) const;
+        double amountFromPercent(const double& mealCost, const int& percent) const;
         void printResult(const double& mealCost, const int& tipPercent, const int& taxPercent);
 };
 
