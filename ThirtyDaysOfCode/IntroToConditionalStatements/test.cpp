@@ -12,89 +12,24 @@ class SolutionTest : public ::testing::Test {
         }
 };
 
-TEST_F(SolutionTest,testEmptyTip) {
+TEST_F(SolutionTest,testInputNumberIsOdd) {
     Solution solution;
-    ASSERT_DOUBLE_EQ(0.0,solution.amountFromPercent(0.0,0));
+    ASSERT_EQ("Weird",solution.calculate(1));
 }
 
-TEST_F(SolutionTest,testValidTip) {
+TEST_F(SolutionTest,testInputNumberIsEven) {
     Solution solution;
-    ASSERT_DOUBLE_EQ(2.4,solution.amountFromPercent(12,20));
+    ASSERT_EQ("Not Weird",solution.calculate(2));
 }
 
-TEST_F(SolutionTest,testNegativeTip) {
+TEST_F(SolutionTest,testInputNumberIsAboveFive) {
     Solution solution;
-    ASSERT_DOUBLE_EQ(-2.4,solution.amountFromPercent(12,-20));
+    ASSERT_EQ("Weird",solution.calculate(6));
 }
 
-TEST_F(SolutionTest,testNegativeMealCostForTip) {
+TEST_F(SolutionTest,testInputNumberIsAboveTwenty) {
     Solution solution;
-    ASSERT_DOUBLE_EQ(-2.4,solution.amountFromPercent(-12,20));
-}
-
-TEST_F(SolutionTest,testAllNegativeTip) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(2.4,solution.amountFromPercent(-12,-20));
-}
-
-TEST_F(SolutionTest,testEmptyTax) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(0.0,solution.amountFromPercent(0.0,0));
-}
-
-TEST_F(SolutionTest,testValidTax) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(0.96,solution.amountFromPercent(12,8));
-}
-
-TEST_F(SolutionTest,testNegativeTax) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(-0.96,solution.amountFromPercent(12,-8));
-}
-
-TEST_F(SolutionTest,testNegativeMealCostForTax) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(-0.96,solution.amountFromPercent(-12,8));
-}
-
-TEST_F(SolutionTest,testAllNegativeTax) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(0.96,solution.amountFromPercent(-12,-8));
-}
-
-TEST_F(SolutionTest,testEmptyTotalCost) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(0.0,solution.totalCost(0.0,0,0));
-}
-
-TEST_F(SolutionTest,testValidTotalCost) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(15.36,solution.totalCost(12.00,20,8));
-}
-
-TEST_F(SolutionTest,testNegativeTipTotalCost) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(10.56,solution.totalCost(12.00,-20,8));
-}
-
-TEST_F(SolutionTest,testNegativeTaxTotalCost) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(13.44,solution.totalCost(12.00,20,-8));
-}
-
-TEST_F(SolutionTest,testNegativeMealCostTotalCost) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(-15.36,solution.totalCost(-12.00,20,8));
-}
-
-TEST_F(SolutionTest,testiAllNegativeTotalCost) {
-    Solution solution;
-    ASSERT_DOUBLE_EQ(-8.64,solution.totalCost(-12.00,-20,-8));
-}
-
-TEST_F(SolutionTest,tesFormattedResult) {
-    Solution solution;
-    ASSERT_EQ("The total meal cost is 15 dollars.\n",solution.formattedResult(12.00,20,8));
+    ASSERT_EQ("Weird",solution.calculate(20));
 }
 
 int main(int argc, char **argv) {
