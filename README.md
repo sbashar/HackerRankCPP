@@ -5,4 +5,4 @@ A collection of C++ solutions for [Hacker Rank Challenges](https://www.hackerran
 * [Day 0: Hello, World](ThirtyDaysOfCode/HelloWorld) - https://www.hackerrank.com/challenges/30-hello-world
 * [Day 1: Data Types](ThirtyDaysOfCode/DataTypes) - https://www.hackerrank.com/challenges/30-data-types
 * [Day 2: Operators](ThirtyDaysOfCode/Operators) - https://www.hackerrank.com/challenges/30-operators
-
+* [Day 3: Intro to Conditional Statements]() - https://www.hackerrank.com/challenges/30-conditional-statements/problem
