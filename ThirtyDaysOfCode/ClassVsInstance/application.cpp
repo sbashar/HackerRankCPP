@@ -4,20 +4,20 @@
 using namespace std;
 
 int main() {
-    // Input variables
-    double mealCost;
-    int tipPercent;
-    int taxPercent;
-
-    // Read input
-    cin >> mealCost;
-    cin >> tipPercent;
-    cin >> taxPercent;
-
-    Person person;
-
-    // Print person
-    person.printResult(mealCost, tipPercent, taxPercent);
+    int t;
+    int age;
+    cin >> t;
+    for(int i=0; i < t; i++) {
+        cin >> age;
+        Person p(age);
+//        p.amIOld();
+        for(int j=0; j < 3; j++) {
+//            p.yearPasses(); 
+        }
+//        p.amIOld();
+      
+        cout << '\n';
+    }
 
     return 0;
 }
