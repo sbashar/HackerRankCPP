@@ -7,6 +7,13 @@ Person::Person(const int& initialAge) : age(initialAge) {
     } 
 }
 
-int Person::getAge() const {
-    return age;
+std::string Person::amIOld() const {
+    std::string returnString = "You are old.\n";
+    if(age < 13) {
+       returnString = "You are young.\n"; 
+    } else if (age >= 13 && age < 18) {
+        returnString = "You are a teenager.\n";
+    }
+    std::cout << returnString;
+    return returnString;
 }

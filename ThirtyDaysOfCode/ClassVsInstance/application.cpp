@@ -10,11 +10,11 @@ int main() {
     for(int i=0; i < t; i++) {
         cin >> age;
         Person p(age);
-//        p.amIOld();
+        p.amIOld();
         for(int j=0; j < 3; j++) {
-//            p.yearPasses(); 
+            p.yearPasses(); 
         }
-//        p.amIOld();
+        p.amIOld();
       
         cout << '\n';
     }
