@@ -1,5 +1,5 @@
 #include<iostream>
-#include "solution.h"
+#include "person.h"
 
 using namespace std;
 
@@ -14,10 +14,10 @@ int main() {
     cin >> tipPercent;
     cin >> taxPercent;
 
-    Solution solution;
+    Person person;
 
-    // Print solution
-    solution.printResult(mealCost, tipPercent, taxPercent);
+    // Print person
+    person.printResult(mealCost, tipPercent, taxPercent);
 
     return 0;
 }

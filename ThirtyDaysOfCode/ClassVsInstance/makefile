@@ -25,11 +25,11 @@ CXXFLAGS += -Wmissing-field-initializers
 CXXFLAGS += -Wmissing-format-attribute
 CXXFLAGS += -Wredundant-decls
 
-application: application.o solution.o
+application: application.o person.o
 
 application.o: | run_test
 
-test: test.o solution.o
+test: test.o person.o
 test: LDLIBS += -lgtest -lpthread
 test: LDFLAGS += -L/usr/lib64/gtest
 
