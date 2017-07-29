@@ -5,19 +5,15 @@ using namespace std;
 
 int main() {
     // Input variables
-    double mealCost;
-    int tipPercent;
-    int taxPercent;
+    int n;
 
     // Read input
-    cin >> mealCost;
-    cin >> tipPercent;
-    cin >> taxPercent;
+    cin >> n;
 
     Solution solution;
 
     // Print solution
-    solution.printResult(mealCost, tipPercent, taxPercent);
+    solution.printResult(n);
 
     return 0;
 }
