@@ -17,6 +17,12 @@ TEST_F(SolutionTest,testEmptyEvenStrinChar) {
     ASSERT_EQ("",solution.evenStringChar(""));
 }
 
+TEST_F(SolutionTest,testValidEvenStrinChar) {
+    Solution solution;
+    ASSERT_EQ("Hce",solution.evenStringChar("Hacker"));
+    ASSERT_EQ("Rn",solution.evenStringChar("Rank"));
+}
+
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
