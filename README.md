@@ -8,3 +8,4 @@ A collection of C++ solutions for [Hacker Rank Challenges](https://www.hackerran
 * [Day 3: Intro to Conditional Statements](ThirtyDaysOfCode/IntroToConditionalStatements) - https://www.hackerrank.com/challenges/30-conditional-statements/problem
 * [Day 4: Class vs. Instance](ThirtyDaysOfCode/ClassVsInstance) - https://www.hackerrank.com/challenges/30-class-vs-instance/problem
 * [Day 5: Loops](ThirtyDaysOfCode/Loops/) - https://www.hackerrank.com/challenges/30-loops/problem
+* [Day 6: Let's Review](ThirtyDaysOfCode/LetsReview/) - https://www.hackerrank.com/challenges/30-review-loop/problem
