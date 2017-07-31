@@ -3,12 +3,13 @@
 
 #include<string>
 #include<iostream>
-#include<sstream>
 
 class Solution {
     public:
         std::string evenStringChar(const std::string& inputString) const;
-        void printResult(const int& numberOfTestCases, const std::string& inputString) const;
+        std::string oddStringChar(const std::string& inputString) const;
+        std::string formatResult(const std::string& inputString) const;
+        void printResult() const;
 };
 
 #endif
