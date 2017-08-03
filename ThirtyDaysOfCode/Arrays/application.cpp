@@ -5,19 +5,20 @@ using namespace std;
 
 int main() {
     // Input variables
-    double mealCost;
-    int tipPercent;
-    int taxPercent;
+    int inputNumber;
 
     // Read input
-    cin >> mealCost;
-    cin >> tipPercent;
-    cin >> taxPercent;
+    cin >> inputNumber;
+    int* inputArray = new int[inputNumber];
+
+    for(int i =0; i < inputNumber; i++) {
+        cin >> inputArray[i];
+    }
 
     Solution solution;
 
     // Print solution
-    solution.printResult(mealCost, tipPercent, taxPercent);
+    solution.printResult(inputNumber,inputArrayt);
 
     return 0;
 }
