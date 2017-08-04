@@ -18,7 +18,7 @@ int main() {
     Solution solution;
 
     // Print solution
-    solution.printResult(inputNumber,inputArrayt);
+    solution.printResult(inputNumber,inputArray);
 
     return 0;
 }
