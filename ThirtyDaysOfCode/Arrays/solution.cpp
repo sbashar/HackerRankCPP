@@ -3,8 +3,11 @@
 std::string Solution::formatResult(const int& inputNumber, const int* const inputArray) const {
     std::stringstream stream;
 
-    for(int i = inputNumber; i > 0; i--) {
+    for(int i = inputNumber-1; i >= 0; i--) {
         stream << inputArray[i];
+        if(i != 0) {
+            stream << " ";
+        }
     }
     
     stream << std::endl;
