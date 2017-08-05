@@ -10,3 +10,4 @@ A collection of C++ solutions for [Hacker Rank Challenges](https://www.hackerran
 * [Day 5: Loops](ThirtyDaysOfCode/Loops/) - https://www.hackerrank.com/challenges/30-loops/problem
 * [Day 6: Let's Review](ThirtyDaysOfCode/LetsReview/) - https://www.hackerrank.com/challenges/30-review-loop/problem
 * [Day 7: Arrays](ThirtyDaysOfCode/Arrays/) - https://www.hackerrank.com/challenges/30-arrays/problem
+* [Day 8: Dictionaries and Maps](ThirtyDaysOfCode/DictionariesAndMaps/) - https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem
