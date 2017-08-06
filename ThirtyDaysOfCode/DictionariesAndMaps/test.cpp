@@ -14,7 +14,9 @@ class SolutionTest : public ::testing::Test {
 
 TEST_F(SolutionTest,testEmptyGetPhoneBook) {
     Solution solution;
-    ASSERT_DOUBLE_EQ(,solution.);
+    std::map<std::string,int> phoneBook;
+    phoneBook = solution.getPhoneBook();
+    ASSERT_EQ(true,phoneBook.empty());
 }
 
 int main(int argc, char **argv) {
