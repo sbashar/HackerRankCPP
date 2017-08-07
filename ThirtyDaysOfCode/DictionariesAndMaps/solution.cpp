@@ -4,7 +4,8 @@ void Solution::setPhoneBook(const std::string& name, const int phoneNumber) {
 
 }
 
-std::map<std::string,int>& Solution::getPhoneBook() const {
+std::map<std::string,int> Solution::getPhoneBook() const {
+    return phoneBook;
 }
 
 void Solution::printResult() const {
