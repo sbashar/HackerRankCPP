@@ -10,6 +10,7 @@ class Solution {
     private:
         std::map<std::string,int> phoneBook; 
     public:
+        Solution() : phoneBook() {}
         std::map<std::string,int> getPhoneBook() const;
         void setPhoneBook(const std::string& name, const int phoneNumber);
         void printResult() const;
