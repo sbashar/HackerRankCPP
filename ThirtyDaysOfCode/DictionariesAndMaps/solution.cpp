@@ -9,9 +9,29 @@ std::map<std::string,int> Solution::getPhoneBook() const {
 }
 
 std::string Solution::searchPhoneBook(const std::string& name) const {
-    (void)name;
+    std::map<std::string,int>::const_iterator it = phoneBook.find(name);
+    std::stringstream stream;
+
+    if(it != phoneBook.end()) {
+        stream << it->first << "=" << it->second << std::endl;
+        return stream.str();
+    }
+
     return "Not found";
 }
 
 void Solution::printResult() const {
+    int itemNumber;
+    std::string name;
+    int phoneNumber;
+
+    //input
+    std::cin >> itemNumber;
+
+    for(int i = 0; i < itemNumber; i++) {
+        std::cin >> name;
+        std::cin >> phoneNumber;
+        Solution::setPhoneBook(name, phoneNumber);
+    }
+    std::cout << std::endl;
 }
