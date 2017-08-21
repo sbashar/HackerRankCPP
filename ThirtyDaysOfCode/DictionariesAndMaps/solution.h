@@ -14,7 +14,7 @@ class Solution {
         std::map<std::string,int> getPhoneBook() const;
         void setPhoneBook(const std::string& name, const int phoneNumber);
         std::string searchPhoneBook(const std::string& name) const;
-        void printResult() const;
+        void printResult();
 };
 
 #endif

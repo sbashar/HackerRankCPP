@@ -32,7 +32,7 @@ TEST_F(SolutionTest,testEmptyMapNotFoundEntySearchPhonebook) {
     std::map<std::string,int> phoneBook;
     phoneBook = solution.getPhoneBook();
     ASSERT_EQ(true,phoneBook.empty());
-    ASSERT_EQ("Not found", solution.searchPhoneBook("sam"));
+    ASSERT_EQ("Not found\n", solution.searchPhoneBook("sam"));
 }
 
 TEST_F(SolutionTest,testPopulatedMapNotFoundEntySearchPhonebook) {
@@ -41,7 +41,7 @@ TEST_F(SolutionTest,testPopulatedMapNotFoundEntySearchPhonebook) {
     solution.setPhoneBook("sam", 99912222);
     phoneBook = solution.getPhoneBook();
     ASSERT_EQ(false,phoneBook.empty());
-    ASSERT_EQ("Not found", solution.searchPhoneBook("invalid"));
+    ASSERT_EQ("Not found\n", solution.searchPhoneBook("invalid"));
 }
 
 TEST_F(SolutionTest,testPopulatedMapValidEntrySearchPhonebook) {

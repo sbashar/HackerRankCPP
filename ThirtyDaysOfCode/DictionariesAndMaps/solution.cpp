@@ -17,10 +17,10 @@ std::string Solution::searchPhoneBook(const std::string& name) const {
         return stream.str();
     }
 
-    return "Not found";
+    return "Not found\n";
 }
 
-void Solution::printResult() const {
+void Solution::printResult() {
     int itemNumber;
     std::string name;
     int phoneNumber;
@@ -33,5 +33,8 @@ void Solution::printResult() const {
         std::cin >> phoneNumber;
         Solution::setPhoneBook(name, phoneNumber);
     }
-    std::cout << std::endl;
+
+    while(getline(std::cin >> std::ws, name)){
+        std::cout << Solution::searchPhoneBook(name);
+    }
 }
