@@ -3,9 +3,9 @@
 
 #include<iostream>
 
-class solution {
-    private:
-
+class Solution {
+    public:
+       void printResult() const; 
 };
 
 #endif
